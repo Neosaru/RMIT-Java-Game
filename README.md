@@ -10,7 +10,7 @@ What we need to do:
  [need brief introduction to the world for the player]
  - (/) Player Class
  - (/) Hostile Class
- - () Room Class 
+ - (-) Room Class 
  [urgent]
  - () Inventory Class
  

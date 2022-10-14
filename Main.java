@@ -9,24 +9,8 @@ public class Main {
 		//=------=setup
 		
 		Message("Welcome to the Game World!\n");
-		Message("\\_________________/\r\n"
-				+ "|       | |       |\r\n"
-				+ "|       | |       |\r\n"
-				+ "|       | |       |\r\n"
-				+ "|_______| |_______|\r\n"
-				+ "|_______   _______|\r\n"
-				+ "|       | |       |\r\n"
-				+ "|       | |       |\r\n"
-				+ " \\      | |      /\r\n"
-				+ "  \\     | |     /\r\n"
-				+ "   \\    | |    /\r\n"
-				+ "    \\   | |   /\r\n"
-				+ "     \\  | |  /\r\n"
-				+ "      \\ | | /\r\n"
-				+ "       \\| |/\r\n"
-				+ "        \\_/");
-		Message("\n");
-		Message("What is thy name Adventurer?");
+		Shield();
+		Message("\nWhat is thy name Adventurer?");
 		
 		username = sc.nextLine();
 		while(username.length() > 25) {
@@ -47,6 +31,25 @@ public class Main {
 	
 	public static void Message(String s) {
 		System.out.println(s);
+	}
+	
+	public static void Shield() {
+		Message("\\_________________/\r\n"
+				+ "|       | |       |\r\n"
+				+ "|       | |       |\r\n"
+				+ "|       | |       |\r\n"
+				+ "|_______| |_______|\r\n"
+				+ "|_______   _______|\r\n"
+				+ "|       | |       |\r\n"
+				+ "|       | |       |\r\n"
+				+ " \\      | |      /\r\n"
+				+ "  \\     | |     /\r\n"
+				+ "   \\    | |    /\r\n"
+				+ "    \\   | |   /\r\n"
+				+ "     \\  | |  /\r\n"
+				+ "      \\ | | /\r\n"
+				+ "       \\| |/\r\n"
+				+ "        \\_/");
 	}
 	
 }

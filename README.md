@@ -2,11 +2,16 @@
 
 Legend = () not started, (-) started, (/) finished
 
-In Need:
+What we need to do:
 
- - () Room Class
  - () Reasonable game plot 
  - () Player and Hostiles may be missing attributes
  - (-) Start Menu
+ [need brief introduction to the world for the player]
+ - (/) Player Class
+ - (/) Hostile Class
+ - () Room Class 
+ [urgent]
+ - () Inventory Class
  
  

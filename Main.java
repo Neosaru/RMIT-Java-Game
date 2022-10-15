@@ -15,7 +15,7 @@ public class Main {
 		username = sc.nextLine();
 		while(username.length() > 25) {
 			username = "";
-			Message("Username must be 6-25 characters long!");
+			Message("Username must be maximum of 25 characters long!");
 			Message("Please try again");
 			
 			username = sc.nextLine();

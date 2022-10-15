@@ -29,11 +29,17 @@ public class Main {
 		
 	}
 	
-	public static void Message(String s) {
+	//=----------------------------------------=//
+	
+	// This makes it that you don't have to type out System.out.println()
+	//so just type in Message()
+	//string only
+	 static void Message(String s) {
 		System.out.println(s);
 	}
 	
-	public static void Shield() {
+	 
+	static void Shield() {
 		Message("\\_________________/\r\n"
 				+ "|       | |       |\r\n"
 				+ "|       | |       |\r\n"
@@ -51,6 +57,7 @@ public class Main {
 				+ "       \\| |/\r\n"
 				+ "        \\_/");
 	}
+	//=--------------------------------------=//
 	
 }
 // --------------------------------------- Main

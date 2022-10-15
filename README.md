@@ -1,5 +1,10 @@
 # RMIT-Java-Game
 
+
+feel free to add shit lol
+right now we just need a list of what we need to do :^)
+
+
 Legend = () not started, (-) started, (/) finished
 
 What we need to do:

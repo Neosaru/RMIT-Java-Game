@@ -6,8 +6,10 @@ public class Room {
 		//actions
 		//what rooms you can go to
 		// inventory
+		
+		Main.Message("");
 	}
-	
+
 	public static void ShopRoom() {
 		
 	}

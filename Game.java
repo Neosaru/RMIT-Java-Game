@@ -48,7 +48,7 @@ public static String banner = "Text-Based Adventure Game!\n"
               break;
       case 6: System.out.println("By not having the required Item, unknown forces are now watching you. You have died.");
               break;
-      default: System.out.println("Your celectial body has been consumed by unknown forces, status: " + status);
+      default: System.out.println("Your celestial body has been consumed by unknown forces, status: " + status);
     }
     System.out.println("Thank you for playing!");
     System.exit(0);

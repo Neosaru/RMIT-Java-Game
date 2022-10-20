@@ -2,18 +2,18 @@ import javax.swing.*;
 
 public class Scene {
 
-  Action action = null; 
-  String title = null;
-  Item item = null;
-  Item need = null;
-  String announcement = null;
+  Action action = null;  //scene action
+  String title = null;	// scene title
+  Item item = null;	// scene's item
+  Item need = null;	// scene's required item
+  String announcement = null; // scene announcement
 
   public int x = 0,
-             y = 0;
+             y = 0; // scene x,y coordinates
   
 public GuiPanel guiPanel;
 
-  public Scene (String title, int action){
+  public Scene (String title, int action){// title and action of the scene
     this.title = title;
     this.action = new Action(action, this);
   }
@@ -28,11 +28,11 @@ public GuiPanel guiPanel;
     map[row][col] = this;
   }
  
-  public void setAnnouncement(String announcement){
+  public void setAnnouncement(String announcement){ // setting the announcements of the scene
     this.announcement = announcement;
   }
 
-  public void setCoordinates(int x, int y){
+  public void setCoordinates(int x, int y){ // setting the coordinates of the scene
     this.x = x;
     this.y = y;
   }
@@ -71,7 +71,7 @@ public GuiPanel guiPanel;
     return title;  
   }
 
-  public static void setScenes(){
+  public static void setScenes(){ // setting the scenes
 	  
     Item torch        = new Item("Torch");
     Item Bleach       = new Item("Bleach");
@@ -128,7 +128,7 @@ public GuiPanel guiPanel;
   }
  
   public static final int ROWS = 5,
-                          COLS = 5;
+                          COLS = 5; // setting game dimension
 
   public static Scene[][] map = new Scene[ROWS][COLS];
 

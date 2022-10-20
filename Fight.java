@@ -1,7 +1,7 @@
 public class Fight {
 
-  Player player = null;
-  String npc = null;
+  Player player = null; //access to players health
+  String npc = null; // Non-Playable Character
 
   public Fight(Player player, String npc){
     this.player = player;

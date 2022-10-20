@@ -1,8 +1,5 @@
 import javax.swing.*;
 import java.awt.*;  
-import javax.swing.event.*;
-import java.awt.event.*;  
-// added text field
 
 public class Gui extends JFrame{
   public GuiPanel[][] panels = 

@@ -3,8 +3,8 @@ import java.util.*;
 public class Player {
 
   ArrayList<Item>inventory;
-  int health = 100;
-  Scene currentScene = null;
+  int health = 100; // Health
+  Scene currentScene = null; //where player is
   
   public Player (Scene scene){
     inventory = new ArrayList<Item>();

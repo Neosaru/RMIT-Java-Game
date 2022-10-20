@@ -5,11 +5,11 @@ import java.awt.*;
 
 public class GuiPanel extends JPanel{
 
-  Scene scene = null;
-  JLabel title = null;
-  JLabel needs = null;
-  JLabel treasure = null;
-   JLabel comment = null;
+  Scene scene = null; // what the panel is connected to
+  JLabel title = null; // title of scene
+  JLabel needs = null; // name of treasure required
+  JLabel treasure = null; // name of treasure
+   JLabel comment = null; //comment
    
    public GuiPanel(Scene scene) {
      this.scene = scene; 
@@ -24,7 +24,6 @@ public class GuiPanel extends JPanel{
    
   public static void setFonts(){
     JComponent btnReset = null;
-	// set font on button and textfield
     Font font1 = btnReset.getFont();
     Font font2 = new Font(font1.getName(), Font.BOLD, 40);
     JComponent jtf1 = null;

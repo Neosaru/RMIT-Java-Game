@@ -1,9 +1,3 @@
-
-/**
- * You can add more actions here, insert the into the setScenes() item
- *   and add to the switch statement
- * 
- */
 public class Action {
   public static final int NO_ACTION      = 1;
   public static final int PICKUP_ACTION  = 2;
@@ -11,13 +5,22 @@ public class Action {
   public static final int FIGHT_ACTION   = 4;
   public static final int WIN_ACTION     = 5;
 
+  /*
+   * 1) Will do nothing
+   * 2) Will add or subtract points from the item
+   * 3) dead-end meaning player can only go back
+   * 4) fight with non-playable character
+   * 5) displays win to player
+   */
+  
    private int action = 0;
+   //associated scene
    Scene scene = null;
 
   public Action(int action, Scene scene) {
     this.action = action;
     this.scene  = scene;
-  } 
+  } // carries out "action" on entry to scene
 
   public int doAction(Player player) {
     int status = 0;
@@ -57,7 +60,7 @@ public class Action {
     //System.out.println("diagnostic doFight");
     int status = 0;
     Fight fight = null;
-    Item item = scene.item;
+    Item item = scene.item;//enemy
     if(item != null){
       fight = new Fight(player, item.title);
       status = fight.run();
@@ -71,6 +74,7 @@ public class Action {
   }
     
   private int doNoAction(Player player){
+	 //System.out.println("diagnostic doNoAction-todo")
      player.health+=10;     
      return 0;
   }

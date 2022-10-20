@@ -42,7 +42,7 @@ public static String banner = "Text-Based Adventure Game!\n"
               break;
       case 3: System.out.println("Adventurer, by reaching your Maiden's abode you have awakened forces that cannot be explained and have been marked. Watch Out... For now."); 
               break;
-      case 4: System.out.println("You have been killed by the enemy, your ancestors is seething with rage."); 
+      case 4: System.out.println("You have been killed by the enemy, your ancestors are seething with rage."); 
               break;
       case 5: System.out.println("Your cowardice led to untimely death. Be Braver next time.");
               break;
